@@ -59,9 +59,9 @@ def main():
                    ])
 
 
-    image = Image.open("C:\\Users\\F9910101\\Pictures\\cat03.jpg")
+    image = Image.open("cat03.jpg")
     immatriz = np.array(image)
-    #pix = inicializa(pix) # nao necessario
+    #immatriz = inicializa(immatriz) # nao necessario
     result=correl(dx,dy,immatriz)
     del immatriz
     img = Image.fromarray(result)
